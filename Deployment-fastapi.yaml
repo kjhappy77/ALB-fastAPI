@@ -9,7 +9,7 @@ spec:
       app: fastapi
   template:
     metadata:
-      name: fastapi-for-svelte-connection
+      name: fastapi-for-ALB-connection
       labels:
         app: fastapi
     spec:
