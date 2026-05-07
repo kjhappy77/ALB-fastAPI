@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fastapi-deployment
+  name: fastapi-deployment-for-alb
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: fastapi
+      app: fastapi-for-alb
   template:
     metadata:
-      name: fastapi-for-ALB-connection
+      name: fastapi-for-alb-connection
       labels:
-        app: fastapi
+        app: fastapi-for-alb
     spec:
       containers:
       - name: fastapi-container

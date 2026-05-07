@@ -17,6 +17,6 @@ spec:
             path: /
             backend:
               service:
-                name: fastapi
+                name: fastapi-for-alb
                 port:
                   number: 80
